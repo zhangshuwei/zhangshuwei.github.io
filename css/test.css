@@ -1,0 +1,94 @@
+.row-home {
+  margin: 0px auto;
+  padding: 100px 0px;
+  height: 650px;
+}
+.row-header {
+  margin: 0px auto;
+  padding: 0px 0px;
+}
+.row-content {
+  margin: 0px auto;
+  padding:  50px 0px;
+  border-bottom: 1px ridge;
+  /*min-height: 400px;*/
+}
+.row-footer {
+  margin: 0px auto;
+  padding: 20px 0px;
+  background-color: #AfAfAf;
+}
+.jumbotron {
+  margin: 0px auto;
+  padding: 70px 30px;
+  color: floralwhite;
+}
+.carousel {
+  background: #1a237e;
+}
+.carousel .item {
+  height: 300px;
+}
+.carousel .item img {
+  left: 0;
+  min-height: 300px;
+  position: absolute;
+  top: 0;
+}
+.navbar{ 
+background-image: none;
+}
+.navbar{
+  min-height: 50px;
+  padding: 0px 0px;
+  margin-right: 50px;
+  margin-top: 50px;
+}
+.navbar-nav>li> a {
+  color:black;
+  font-size: 16px;
+}
+.navbar .navbar-nav .navbar-right > .active > a:hover {
+    background-color: black;
+	color:gray;
+}
+.navbar .navbar-nav .navbar-right > .active > a:focus {
+    background-color:black;
+	color:gray;
+}
+
+address {
+  color: #0f0f0f;
+  font-size: 80%;
+  margin: 0px;
+}
+body {
+  background-image:url("../img/backgroud.jpg");
+  background-repeat:no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center
+  padding: 50px 0px 0px 0px;
+  z-index: 0;
+}
+.tab-content {
+  border-bottom: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  padding: 10px;
+}
+.affix {
+  top: 100px;
+}
+#carouselButtons {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+}
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
