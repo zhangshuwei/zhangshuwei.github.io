@@ -62,9 +62,12 @@
 .carousel .item h1{
 	color:#0066ff;
 }
-.navbar{
+.navbar-default{
   margin-top:40px;
   padding-left: 20px;
+  background: transparent;
+  border-style: none;
+  border-color: transparent;
 }
 .navbar-nav a{
   color:#404040;
@@ -73,12 +76,12 @@
   background-color:transparent;
 }
 
-.navbar .navbar-nav a:hover {
-    background:#cce6ff;
+.navbar-default .navbar-nav >.active > a  {
+    
 	color:#262626;
 }
 
-.navbar .navbar-nav>.active>a {
+.navbar-default .navbar-nav>li > a : hover{
     color:#262626;
 }
 address {
