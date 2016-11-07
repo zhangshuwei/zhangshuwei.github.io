@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="myWeb">
 
 <head>
     <meta charset="utf-8">
@@ -7,17 +7,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The above 3 meta tags *must* come first in the head; any other head 
          content must come *after* these tags -->
-    <title>shuwei's web</title>
+    <title>Shuwei Web</title>
      <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/mystyles.css" rel="stylesheet">
-    <link href="css/font-awesome.min.css" rel="stylesheet">
-    <link href="css/bootstrap-social.css" rel="stylesheet">
-     <link href="css/animate.css" rel="stylesheet" >
-	 
-
-
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="assets/css/mystyles.css" rel="stylesheet">
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/bootstrap-social.css" rel="stylesheet">
+    <link href="assets/css/animate.css" rel="stylesheet" >
+	<script src="assets/js/jquery/jquery.min.js" rel="stylesheet" ></script>
+	<script src="assets/js/angularjs_1.5/angular.min.js"></script>	
+	<script src="assets/js/bootstrap_3.3.7/bootstrap.min.js"></script>
+	<script src="assets/js/angularjs_1.5/angularjs-ui-router.min.js"></script>
+	<script src="assets/js/myWeb/myWeb.js"></script>
+	<script src="assets/js/myWeb/myWeb.controller.js"></script>	
+	<script src="assets/js/myWeb/myWeb.service.js"></script>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,46 +30,10 @@
     <![endif]-->
 </head>
 
-<body id="home">
-	
-	  <nav class="navbar navbar-default" role="navigation">
-	  
-	  <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle Navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-        </button>
-		  
-	 </div>
-        <div id="navbar" class=" collapse navbar-collapse navbar-responsive-collapse ">
-                    <ul class="nav navbar-nav"> 
-                     <li class="active"><a href="index.html"><span class="glyphicon glyphicon-home"
-                         aria-hidden="true"></span> Home</a></li>
-						<li><a href="aboutme.html"><span class="glyphicon glyphicon-info-sign"
-                         aria-hidden="true"></span> About me</a></li>
-                    <li><a href="project.html"><span class="glyphicon glyphicon-list-alt"
-                    aria-hidden="true"></span> Project</a></li>
-                    <li><a href="contact.html"><i class="fa fa-envelope-o"></i> Contact</a></li>
-                 </ul>
-            </div>
-		
-       </nav> 
-		  
+<body id={{location}}>
 
-	<div class="container"> 
-            <div class="row row-home">
-                <div class="center-block">
-                <img class="img-circle img-responsive center-block animated fadeInDown"
-                         src="img/shuwei.jpg" alt="Shuwei">
-					<h1 >Shuwei ZHANG</h1>
-                    <h3>A Passionate, Creative, and Devoted<br> Web Front-End Developer</h3>
-                   <h4>swzhang296@gmail.com </h4>
-            </div>
-            </div>
-       </div>
-	<script src="js/jquery.min.js"></script>
- 	 <script src="js/bootstrap.min.js"></script>
+	<div ui-view="nav-top" ></div>
+	<div ui-view="content" ></div>
+	
 </body>
 </html>
