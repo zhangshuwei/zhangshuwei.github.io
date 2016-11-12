@@ -20,7 +20,7 @@ app.config( function( $stateProvider, $urlRouterProvider ) {
 	        })
 
 		$stateProvider
-	  		.state('home', {
+	  		.state('aboutme', {
 	            url: '/aboutme',
 	            views:{
 	                'nav-top' : {
